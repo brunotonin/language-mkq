@@ -7,7 +7,7 @@
   "patterns": [
     {
       "begin": "^\\s*(?:\\[SQL\\]|\\[PLI\\]|@>SQL)\\s*$",
-      "end": "(?=^\\s*(?:@>(?:RPA|SQL|MKQ|MKPT|MKP|EXE|XLS|GRF|ARQ|EML|WWW|WSV|CAB|DFM)|\\[SQL\\]|##>|\\]\\}|$))",
+      "end": "(?=^\\s*(?:@>(?:RPA|SQL|MKQ|MKPT|MKP|EXE|XLS|GRF|ARQ|EML|WWW|WSV|CAB|DFM)|\\[(?:MKQ|PAP|ETQ|QTD|MRG|LEI|OUT|PDF|CAR|EDT|VDD|TIT|CAB|COR|DEF|DIM|OPC|OPP|PAR|FOG|MSI|MII|MFI|MSF|MIF|MFF|PLE|PLI|PLF|SQL|SQE|GRD|PRE)\\]|##>|\\]\\}|>>))",
       "name": "meta.embedded.sql.mkq",
       "beginCaptures": { "0": { "name": "keyword.control.mkq" } },
       "contentName": "source.sql",
