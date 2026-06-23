@@ -34,7 +34,9 @@ jobs:
           fi
 
       - name: Package extension
-        run: vsce package --out "dist/language-mkq-${GITHUB_REF_NAME#v}.vsix"
+        run: |
+          mkdir -p dist
+          vsce package --out "dist/language-mkq-${GITHUB_REF_NAME#v}.vsix"
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
